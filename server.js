@@ -5,12 +5,13 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+    articleOne = {
 
     title: 'Article One | Vikas',
     heading: 'Article One',
     date: 'Sep 19, 2016',
-    content:`
+    content: `
         <p>
             This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
         </p>
@@ -22,6 +23,42 @@ var articleOne = {
         <p>
             This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
         </p>`
+}, 
+    articleTwo = {
+        title: 'Article Two | Vikas',
+        heading: 'Article Two',
+        date: 'Sep 19, 2016',
+        content: `
+            <p>
+                This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+            </p>
+        
+            <p>
+                This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+            </p>
+        
+            <p>
+                This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+            </p>`
+        
+    },
+    articleThree = {
+            title: 'Article Three | Vikas',
+            heading: 'Article Three',
+            date: 'Sep 19, 2016',
+            content: `
+                <p>
+                    This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+                </p>
+            
+                <p>
+                    This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+                </p>
+            
+                <p>
+                    This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One. This content is added to Article One . This content is added to Article One
+                </p>`
+    }
 };
 
 
